@@ -10,16 +10,16 @@ export default function Home() {
 
         <div className={styles.heroContent}>
           <p className={styles.kicker}>Modern software studio</p>
-
           <h1 className={styles.title}>
             Building the
             <br />
-            Digital Future.
+            Digital Future
           </h1>
 
+
           <p className={styles.subtitle}>
-            Premium CRM systems, automations and backend solutions—
-            designed with clarity, performance and scale in mind.
+             We design and build software systems that help
+             real businesses move forward.
           </p>
 
           <div className={styles.actions}>
