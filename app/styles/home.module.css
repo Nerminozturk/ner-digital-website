@@ -1,0 +1,163 @@
+.page{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px 80px;
+}
+
+/* HERO */
+.hero{
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 560px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  background: #f6f7f9;
+}
+
+/* Bu alan Runway gibi cinematic görsel/video alanı.
+   Şimdilik gradient + glow. Sonra buraya image/video koyacağız. */
+.heroMedia{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 70% 25%, rgba(77, 66, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 30% 70%, rgba(0, 210, 255, 0.25), transparent 55%),
+    linear-gradient(180deg, #0b0d10 0%, #121623 45%, #f6f7f9 140%);
+  transform: scale(1.08);
+}
+
+.heroOverlay{
+  position:absolute; inset:0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.60) 38%, rgba(255,255,255,0.08) 70%, rgba(255,255,255,0) 100%);
+}
+
+.heroContent{
+  position: relative;
+  padding: 90px 70px;
+  max-width: 640px;
+}
+
+.kicker{
+  color: rgba(11,13,16,0.65);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.title{
+  margin: 0 0 18px;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 650;
+}
+
+.subtitle{
+  margin: 0 0 28px;
+  color: rgba(11,13,16,0.70);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.actions{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #0b0d10;
+  color: #fff;
+  border: 1px solid rgba(11,13,16,0.15);
+}
+
+.secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.65);
+  border: 1px solid var(--border);
+  color: #0b0d10;
+}
+
+/* STORY */
+.story{
+  padding: 58px 0 0;
+}
+
+.storyGrid{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.storyImage{
+  height: 360px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, rgba(11,13,16,0.08), rgba(11,13,16,0.02)),
+    radial-gradient(circle at 30% 30%, rgba(0, 210, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(77, 66, 255, 0.16), transparent 55%);
+}
+
+.h2{
+  margin: 0 0 12px;
+  font-size: 40px;
+  letter-spacing: -0.02em;
+}
+
+.p{
+  margin: 0 0 14px;
+  color: rgba(11,13,16,0.70);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.storyLink{
+  color: #0b0d10;
+  font-weight: 600;
+}
+
+/* FOOTER CTA */
+.footerCta{
+  margin-top: 64px;
+  border-top: 1px solid var(--border);
+  padding-top: 44px;
+}
+
+.footerInner{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.h3{
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.pMuted{
+  margin: 0 0 10px;
+  color: rgba(11,13,16,0.60);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .heroContent{ padding: 70px 26px; }
+  .title{ font-size: 44px; }
+  .storyGrid{ grid-template-columns: 1fr; }
+  .storyImage{ height: 260px; }
+}

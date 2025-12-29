@@ -1,0 +1,50 @@
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 14px 24px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: var(--glass);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner{
+  max-width: 1120px;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  font-size: 16px;
+}
+
+.right{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+}
+
+.link{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sep{
+  width: 1px;
+  height: 18px;
+  background: var(--border);
+}
+
+.cta{
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #0b0d10;
+  color: #fff;
+}
